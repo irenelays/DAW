@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Crear Cuenta - Mi Cuenta</title>
+    </head>
+
+    <body>
+        <header>
+            <img src="logoCulinarIA.jpg" alt="CulinarIA" width="104" height="142">
+            <a href="micuenta.html">Mi Cuenta</a>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="foro.html">Foro</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="recetas.html">Recetas</a></li>
+                <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+
+                <!-- REVISAR DONDE PONER MI CUENTA -->
+                <li><a href="micuenta.html">Mi Cuenta</a></li>
+            </ul>
+        </nav>
+
+        <section id="perfil">
+            <h2>Gestión de Perfil</h2>
+            <!-- Pongo un filtro y luego hiperlinks a otras paginas para cambiar cada cosa(más paginas tal vez innecesarias) -->
+            <!-- Poner todo seguido es más sencillo, luego ya se mira -->
+
+            <div id="foto-perfil">
+                <img src="imagenes/default-avatar.png" alt="Foto de perfil" width="120">
+                <input type="file" id="subir-foto" accept="image/*">
+            </div>
+
+            <form action="actualizarperfil.php" method="POST"> <!-- Esq es un php!! -->
+                <label for="nombre">Nuevo Nombre:</label>
+                <input type="text" id="nombre" name="nombre" >
+
+                <label for="password">Nueva Contraseña:</label>
+                <input type="password" id="password" name="password" >
+
+                <button type="submit">Guardar Cambios</button>
+            </form>
+
+            <a href="micuenta.html">
+                <button>Cerrar Sesión</button>
+            </a>
+
+            <!--  <button id="cerrar-sesion" onclick="window.location.href='micuenta.html'">Cerrar Sesión</button>window.location.href para JS -->
+        </section>
+
+        <footer>
+            <p>© 2025 CulinarIA - Todos los derechos reservados</p>
+        </footer>
+    </body>
+
+</html>

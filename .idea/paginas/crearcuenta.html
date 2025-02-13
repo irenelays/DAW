@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Iniciar Sesión - Mi Cuenta</title>
+        <title>Crear Cuenta - Mi Cuenta</title>
     </head>
 
     <body>
@@ -24,8 +24,8 @@
             </ul>
         </nav>
 
-        <section id="login">
-            <h2>Iniciar Sesión</h2>
+        <section id="register">
+            <h2>Crear Cuenta</h2>
             <form action="gestionarperfil.html" method="post">
                 <label for="nombre">Nombre usuario:</label>
                 <input type="text" name="nombre" id="nombre" required>
@@ -33,10 +33,12 @@
                 <label for="pswd">Contraseña:</label>
                 <input type="password" name="pswd" id="pswd" required>
 
-                <button type="submit">Iniciar Sesión</button>
+                <label for="confirmar_pswd">Confirmar contraseña:</label>
+                <input type="password" name="confirmar_pswd" id="confirmar_pswd" required>
+
+                <button type="submit">Registrarse</button>
             </form>
 
-            <p><a href="crearcuenta.html">Crear cuenta</a></p>
 
         </section>
 
