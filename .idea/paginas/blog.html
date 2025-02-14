@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Blog</title>
+    </head>
+
+    <body>
+        <header>
+            <img src="logoCulinarIA.jpg" alt="CulinarIA" width="104" height="142">
+            <a href="micuenta.html">Mi Cuenta</a>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="foro.html">Foro</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="recetas.html">Recetas</a></li>
+                <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+
+                <!-- REVISAR DONDE PONER MI CUENTA -->
+                <li><a href="micuenta.html">Mi Cuenta</a></li>
+            </ul>
+        </nav>
+        <h2>Últimos Posts del Blog</h2>
+
+        <section id="posts"> <!-- Sección de posts, va a ser dinámico (como añadir nuevo post¿) -->
+            <article>
+                <h3><a href="blog-posts/post-feb25.html">🥘 ¿Cuál es el mejor arroz para paella?</a></h3>
+                <p>Publicado en Febrero 2025 - Comparación de distintos tipos de arroz...</p>
+            </article>
+
+            <article>
+                <h3><a href="blog-posts/post-en2025.html">🎉 Las mejores recetas para empezar el año</a></h3>
+                <p>Publicado en Enero 2025 - Descubre cómo preparar platos saludables y deliciosos...</p>
+            </article>
+        </section>
+
+        <aside>
+            <h3>Filtrar</h3>
+
+            <form action="#" method="GET"> <!-- # en vez de un archivo, no implementando backend -->
+                <h4>Temática</h4>
+                <label><input type="radio" name="tematica" value="mitos"> Mitos</label><br>
+                <label><input type="radio" name="tematica" value="ciencia"> Ciencia en la cocina</label><br>
+                <label><input type="radio" name="tematica" value="tecnicas"> Técnicas culinarias</label><br>
+                <label><input type="radio" name="tematica" value="historia"> Historia de los alimentos</label>
+
+
+                <h4>Fecha</h4>
+                <label for="mes">Mes:</label>
+                <select id="mes">
+                    <option value="enero">Enero</option>
+                    <option value="febrero">Febrero</option>
+                    <option value="marzo">Marzo</option>
+                    <option value="abril">Abril</option>
+                    <option value="mayo">Mayo</option>
+                    <option value="junio">Junio</option>
+                    <option value="julio">Julio</option>
+                    <option value="agosto">Agosto</option>
+                    <option value="septiembre">Septiembre</option>
+                    <option value="octubre">Octubre</option>
+                    <option value="noviembre">Noviembre</option>
+                    <option value="diciembre">Diciembre</option>
+                </select>
+
+                <label for="anho">Año:</label>
+                <select id="anho">
+                    <option value="2025">2025</option>
+                </select>
+
+                <button type="submit">Filtrar</button>
+            </form>
+        </aside>
+
+        <footer>
+            <p>© 2025 CulinarIA - Todos los derechos reservados</p>
+        </footer>
+    </body>
+
+</html>
