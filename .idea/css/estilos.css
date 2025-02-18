@@ -19,8 +19,8 @@ header {
 
 /* Imagen de logo */
 header .logoico {
-    width: 140px;                        /* Ajusta el tamaño del logo */
-    height: 60px;
+    width: 160px;                        /* Ajusta el tamaño del logo */
+    height: 70px;
 }
 
 /* Imagen "Mi Cuenta" */
@@ -36,42 +36,6 @@ nav {
     margin-top: 10px;                    /* Añadimos un pequeño margen en la parte superior para separarlo de las imágenes */
 }
 
-nav ul {
-    background-color: #593520;
-    list-style: none;
-    padding: 10px 15px;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav a {
-    font-family: "Roboto Light", sans-serif;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-}
-
-/* Encabezado */
-/*
-header {
-    background-color: #BFAA8F;
-    color: white;
-    padding: 10px;
-    text-align: center;
-}
-
-header .micuentaico{
-    margin-right:auto ;
-    width:50px;
-    height: 50px;
-}
-
-/* Navegación */
-/*
 nav ul {
     background-color: #593520;
     list-style: none;
@@ -108,7 +72,7 @@ footer {
     text-align: right; /* Alinea el texto a la derecha */
     padding: 10px 20px; /* Ajusta el espacio interno (arriba/abajo 10px, derecha/izquierda 20px) */
     background: #333;
-    color: white; // Color del texto
+    color: white; /* Color del texto */
     font-size: 12px; /* Reduce el tamaño de la fuente */
 }
 
