@@ -1,24 +1,45 @@
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Roboto Light", sans-serif;
     background-color: #BFAA8F;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
 }
-
-/* Encabezado */
+/* Estilos para el header */
 header {
-    background-color: #BFAA8F;
-    color: white;
-    padding: 10px;
-    text-align: center;
+    display: flex;                       /* Usamos Flexbox para alinear los elementos */
+    justify-content: space-between;      /* Alineamos el logo a la izquierda y "Mi Cuenta" a la derecha */
+    align-items: center;                 /* Alineamos las imágenes verticalmente al centro */
+    padding: 10px;                       /* Espaciado dentro del header */
+    flex-wrap: wrap;                     /* Permitimos que los elementos se envuelvan en caso de que sea necesario */
 }
 
-/* Navegación */
+/* Imagen de logo */
+header .logoico {
+    width: 140px;                        /* Ajusta el tamaño del logo */
+    height: 60px;
+}
+
+/* Imagen "Mi Cuenta" */
+header .micuentaico {
+    width: 50px;                         /* Ajustamos el tamaño de la imagen de "Mi Cuenta" */
+    height: 50px;
+}
+
+/* Estilos para el menú de navegación */
+nav {
+    width: 100%;                         /* Aseguramos que el menú ocupe  el ancho disponible */
+    text-align: center;                  /* Centrar los enlaces del menú */
+    margin-top: 10px;                    /* Añadimos un pequeño margen en la parte superior para separarlo de las imágenes */
+}
+
 nav ul {
     background-color: #593520;
     list-style: none;
-    padding: 0;
+    padding: 10px 15px;
     text-align: center;
 }
 
@@ -28,12 +49,51 @@ nav ul li {
 }
 
 nav a {
+    font-family: "Roboto Light", sans-serif;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+/* Encabezado */
+/*
+header {
+    background-color: #BFAA8F;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+header .micuentaico{
+    margin-right:auto ;
+    width:50px;
+    height: 50px;
+}
+
+/* Navegación */
+/*
+nav ul {
+    background-color: #593520;
+    list-style: none;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    font-family: "Roboto Light", sans-serif;
+    font-weight: bold;
     color: white;
     text-decoration: none;
 }
 
 /* Sección de contenido */
 main {
+    flex: 1; /* Esto hace que el contenido ocupe el espacio disponible */
     width: 80%;
     margin: 20px auto;
     background: white;
@@ -44,8 +104,11 @@ main {
 
 /* Footer */
 footer {
-    text-align: center;
-    padding: 10px;
+    font-family: Inter, sans-serif;
+    text-align: right; /* Alinea el texto a la derecha */
+    padding: 10px 20px; /* Ajusta el espacio interno (arriba/abajo 10px, derecha/izquierda 20px) */
     background: #333;
-    color: white;
+    color: white; // Color del texto
+    font-size: 12px; /* Reduce el tamaño de la fuente */
 }
+
