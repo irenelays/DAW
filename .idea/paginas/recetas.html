@@ -1,96 +1,95 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Recetas</title> 
+
         <meta charset="UTF-8">
-        <title>Home</title>
+        <meta name="authors" content="Irene Leis Montes, Gabriel Novo Vila">
+        <meta name="descrption" content="Blog de CulinarIA, donde encontrarás artículos sobre gastronomía, recetas, técnicas culinarias y mucho más.">
+        <meta name="keywords" content="culinaria, blog, gastronomía, recetas, cocina, alimentos, técnicas culinarias">
+
+        <link rel="stylesheet" href="..\css\estilos.css">
     </head>
 
     <body>
         <header>
             <a href="micuenta.html">Mi Cuenta</a>
             <img src="logoCulinarIA.jpg" alt="CulinarIA" width="104" height="142">
-      </header>
 
-        <nav>
-            <ul>
-                <li><a href="foro.html">Foro</a></li>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="recetas.html">Recetas</a></li>
-                <li><a href="sobrenosotros.html">Sobre nosotros</a></li>
+            <nav>
+                <ul>
+                    <li><a href="foro.html">Foro</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="recetas.html">Recetas</a></li>
+                    <li><a href="sobrenosotros.html">Sobre nosotros</a></li>
+    
+                </ul>
+            </nav>
 
-            </ul>
-        </nav>
+        </header>
 
-        <h2>Recetario</h2> 
+        <section>
 
-        <button><a href="recetasFiltradas.html">Recetas destacadas</a></button>
-        <button>Filtrar</button>
-        <!--Poner el buscador de recetas-->
+            <h2>Recetario</h2> 
 
-        <section id="comidas"> <!-- Aquí van los elementos destacados -->
-            <article>
-                <img src="paella.jpeg" alt="Paella valenciana tradicional" width="256" height="256">Paella valenciana tradicional</img>
-            </article>
+            <a href="recetasFiltradas.html">Recetas destacadas</a>
+            <form>
+                <button>Filtrar</button>
+            </form>
+            <!--Poner el buscador de recetas-->
 
-            <article>
-                <img src="carne.jpeg" alt="Carne al toro" width="130" height="130">Carne al toro</img>
-            </article>
-
-            <article>
-                <img src="fideua.jpeg" alt="Fideua con sepia" width="130" height="130">Fideuá con sepia </img>
-            </article>
-
-            <article>
-                <img src="croquetas.jpeg" alt="Croquetas de jamon" width="130" height="130">Croquetas de jamón</img>
-            </article>
-
-            <article>
-                <img src="kebab.jpeg" alt="Kebab de cordero" width="130" height="130">Kebab de cordero</img>
-            </article>
-
-            <article>
-                <img src="salmorejo.jpeg" alt="Salmorejo" width="130" height="130">Salmorejo</img>
-            </article>
-
-            <p> 
-                Desde platos tradicionales llenos de sabor hasta creaciones modernas que sorprenden al paladar.
-                Porque sabemos que una buena comida es un placer que merece disfrutarse, te invitamos a descubrir nuestras preparaciones y a dejarte llevar por el auténtico sabor de lo bien hecho, como en casa en ningún sitio.
-            </p>
         </section>
+        
+        <main>
 
-        <section id="postres"> <!-- Aquí van los elementos destacados -->
-            <article>
-                <img src="tiramisu.jpeg" alt="Pizza napolitana" width="256" height="256">Tiramisú</img>
-            </article>
+            <section id="comidas"> <!-- Aquí van los elementos destacados -->
+                <div>
+                    <img src="paella.jpeg" alt="Paella valenciana tradicional" width="256" height="256">Paella valenciana tradicional</img>
+        
+                    <img src="carne.jpeg" alt="Carne al toro" width="130" height="130">Carne al toro</img>
+            
+                    <img src="fideua.jpeg" alt="Fideua con sepia" width="130" height="130">Fideuá con sepia </img>
+            
+                    <img src="croquetas.jpeg" alt="Croquetas de jamon" width="130" height="130">Croquetas de jamón</img>
+            
+                    <img src="kebab.jpeg" alt="Kebab de cordero" width="130" height="130">Kebab de cordero</img>
+            
+                    <img src="salmorejo.jpeg" alt="Salmorejo" width="130" height="130">Salmorejo</img>
 
-            <article>
-                <img src="arrozLeche.jpeg" alt="Arroz con leche" width="130" height="130">Arroz con leche</img>
-            </article>
+                    <p> 
+                        Desde platos tradicionales llenos de sabor hasta creaciones modernas que sorprenden al paladar.
+                        Porque sabemos que una buena comida es un placer que merece disfrutarse, te invitamos a descubrir nuestras preparaciones y a dejarte llevar por el auténtico sabor de lo bien hecho, como en casa en ningún sitio.
+                    </p>
 
-            <article>
-                <img src="florentinas.jpeg" alt="Florentinas" width="130" height="130">Florentinas</img>
-            </article>
+                </div>
 
-            <article>
-                <img src="bizcocho.jpeg" alt="Bizcocho yogur" width="130" height="130">Bizcocho de yogur</img>
-            </article>
+            
 
-            <article>
-                <img src="churros.jpeg" alt="Churros" width="130" height="130">Churros</img>
-            </article>
+                <div>
+                    <img src="tiramisu.jpeg" alt="Pizza napolitana" width="256" height="256">Tiramisú</img>
+            
+                    <img src="arrozLeche.jpeg" alt="Arroz con leche" width="130" height="130">Arroz con leche</img>
+            
+                    <img src="florentinas.jpeg" alt="Florentinas" width="130" height="130">Florentinas</img>
+            
+                    <img src="bizcocho.jpeg" alt="Bizcocho yogur" width="130" height="130">Bizcocho de yogur</img>
+            
+                    <img src="churros.jpeg" alt="Churros" width="130" height="130">Churros</img>
+                
+                    <img src="flanHuevo.jpeg" alt="Flan de huevo" width="130" height="130">Flan de huevo</img>
+                
+                    <p> 
+                        Los postres son más que el final de una comida; son pequeños momentos de felicidad, 
+                        recuerdos dulces que se quedan en la memoria. En CulinarIA, creemos que cada bocado debe ser una experiencia, 
+                        una combinación perfecta de sabores,
+                        texturas y aromas que despierten los sentidos.
+                    </p>
 
-            <article>
-                <img src="flanHuevo.jpeg" alt="Flan de huevo" width="130" height="130">Flan de huevo</img>
-            </article>
+                </div>
+            </section>
 
-            <p> 
-                Los postres son más que el final de una comida; son pequeños momentos de felicidad, 
-                recuerdos dulces que se quedan en la memoria. En CulinarIA, creemos que cada bocado debe ser una experiencia, 
-                una combinación perfecta de sabores,
-                texturas y aromas que despierten los sentidos.
-            </p>
-        </section>
+        </main>
 
         <footer>
             <p>© 2025 CulinarIA - Todos los derechos reservados</p>
