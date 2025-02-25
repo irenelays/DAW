@@ -1,78 +1,80 @@
-/* Estilos generales */
 body {
-    font-family: "Roboto Light", sans-serif;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
     background-color: #BFAA8F;
-    margin: 0;
-    padding: 0;
+    color: #333;
+    padding: 0 70px;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: #BFAA8F;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
-}
-/* Estilos para el header */
-header {
-    display: flex;                       /* Usamos Flexbox para alinear los elementos */
-    justify-content: space-between;      /* Alineamos el logo a la izquierda y "Mi Cuenta" a la derecha */
-    align-items: center;                 /* Alineamos las imágenes verticalmente al centro */
-    padding: 10px;                       /* Espaciado dentro del header */
-    flex-wrap: wrap;                     /* Permitimos que los elementos se envuelvan en caso de que sea necesario */
+    align-items: flex-start;
+    padding: 20px 0;
+    position: relative;
 }
 
-/* Imagen de logo */
 header .logoico {
-    width: 160px;                        /* Ajusta el tamaño del logo */
-    height: 70px;
+    width: 200px;
+    display: block;
 }
 
-/* Imagen "Mi Cuenta" */
 header .micuentaico {
-    width: 50px;                         /* Ajustamos el tamaño de la imagen de "Mi Cuenta" */
-    height: 50px;
+    width: 55px;
+    height: auto;
+    position: absolute;
+    right: 0px;
+    top: 20px;
 }
 
-/* Estilos para el menú de navegación */
+/* Barra de navegación */
 nav {
-    width: 100%;                         /* Aseguramos que el menú ocupe  el ancho disponible */
-    text-align: center;                  /* Centrar los enlaces del menú */
-    margin-top: 10px;                    /* Añadimos un pequeño margen en la parte superior para separarlo de las imágenes */
+    background-color: #593520;
+    width: 100%;
+    text-align: center;
+    padding: 1px 0;
 }
 
 nav ul {
-    background-color: #593520;
     list-style: none;
-    padding: 10px 15px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    margin: 0;
 }
 
-nav a {
-    font-family: "Roboto Light", sans-serif;
-    font-weight: bold;
-    color: white;
+nav ul li a {
     text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 15px; /* Añadimos un poco de espacio alrededor del texto */
+    font-size: 16px;
+    transition: background 0.3s ease-in-out; /* Añadimos una transición al color de fondo */
 }
 
-/* Sección de contenido */
+
+/* Main */
 main {
-    flex: 1; /* Esto hace que el contenido ocupe el espacio disponible */
-    width: 80%;
-    margin: 20px auto;
-    background: white;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    padding: 20px; /* Espaciado interno */
+     /* background: #fff;Fondo blanco para resaltar el contenido */
 }
+
 
 /* Footer */
 footer {
-    font-family: Inter, sans-serif;
-    text-align: right; /* Alinea el texto a la derecha */
-    padding: 10px 20px; /* Ajusta el espacio interno (arriba/abajo 10px, derecha/izquierda 20px) */
-    background: #333;
-    color: white; /* Color del texto */
-    font-size: 12px; /* Reduce el tamaño de la fuente */
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0px;
+    font-size: 14px;
+    margin-top: 40px;
+    width: 100%;
+    position: relative;
+    left: 0;
 }
-
