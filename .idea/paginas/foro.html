@@ -1,48 +1,57 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
         <title>Foro-populares</title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Blog de CulinarIA, donde encontrarás artículos sobre gastronomía, recetas, técnicas culinarias y mucho más.">
+        <meta name="keywords" content="culinaria, blog, gastronomía, recetas, cocina, alimentos, técnicas culinarias">
+        <meta name="author" content="Irene Leis Montes, Gabriel Novo Vila">
+
+        <link rel="stylesheet" href="../css/estilos.css">
     </head>
 
     <body>
         <header>
-            <img src="logoCulinarIA.jpg" alt="CulinarIA" width="104" height="142">
-            <a href="micuenta.html">Mi Cuenta</a>
+            <img src="../imagenes/culinarialogo.svg" alt="CulinarIA" class="logoico">
+            <a href="micuenta.html">
+                <img src="../imagenes/micuenta.svg" alt="Mi Cuenta" class="micuentaico" >
+            </a>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="foro.html">Foro</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="recetas.html">Recetas</a></li>
+                    <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+                </ul>
+            </nav>
         </header>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="foro.html">Foro</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="recetas.html">Recetas</a></li>
-                <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+        <main>
+            <h2>Publicaciones Populares</h2>
 
-                <!-- REVISAR DONDE PONER MI CUENTA -->
-                <li><a href="micuenta.html">Mi Cuenta</a></li>
-            </ul>
-        </nav>
+            <section id="posts">
+                <div id>
+                    <p>Publicación de pepa</p>
+                </div>
 
-        <h2>Publicaciones Populares</h2> <!-- Como hago la sección de posts??; cada post tiene su imagen y comentarios -->
+                <div>
+                    <p>Publicación de manoli</p>
+                </div>
+            </section>
 
-        <section id="posts"> <!-- Sección de posts, va a ser dinámico (como añadir nuevo post¿) -->
-            <article>
-                <p>Publicación de pepa</p>
-            </article>
+            <aside>
+                <a href="foro.html">Publicaciones Populares</a>
+                <a href="mispublis.html">Mis Publicaciones</a>
+            </aside>
+        </main>
 
-            <article>
-                <p>Publicación de manoli</p>
-            </article>
-        </section>
-
-        <aside>
-            <a href="foro.html">Publicaciones Populares</a>
-            <a href="mispublis.html">Mis Publicaciones</a>
-        </aside>
 
         <footer>
-            <p>© 2025 CulinarIA - Todos los derechos reservados</p>
+            <p>&copy; 2025 CulinarIA - Todos los derechos reservados</p>
         </footer>
     </body>
 
