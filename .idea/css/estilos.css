@@ -34,15 +34,15 @@ header {
 header .logoico {
     display: block;
     width: 200px;
-    margin: 0 auto; /* Centra el logo */
+    float: left;
+    margin-left: 0px;
 }
 
 header .micuentaico {
     width: 55px;
     height: auto;
-    position: absolute;
-    top: 20px;
-    right: 20px; /* Lo posiciona a la derecha */
+    float: right;
+    margin-right: 20px;
 }
 
 /* Barra de navegación */
