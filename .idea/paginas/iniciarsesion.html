@@ -11,6 +11,7 @@
         <meta name="author" content="Irene Leis Montes, Gabriel Novo Vila">
 
         <link rel="stylesheet" href="../css/estilos.css">
+        <link rel="stylesheet" href="../css/micuenta.css">
     </head>
 
     <body>
@@ -32,19 +33,20 @@
         </header>
 
         <main>
-
             <h2>Iniciar Sesión</h2>
-            <form action="gestionarperfil.html" method="post">
-                <label for="nombre">Nombre usuario:</label>
-                <input type="text" name="nombre" id="nombre" required>
+            <div class="contenedor-formulario">
+                <form action="gestionarperfil.html" method="post">
+                    <label for="nombre">Nombre usuario:</label>
+                    <input type="text" name="nombre" id="nombre" required>
 
-                <label for="pswd">Contraseña:</label>
-                <input type="password" name="pswd" id="pswd" required>
+                    <label for="pswd">Contraseña:</label>
+                    <input type="password" name="pswd" id="pswd" required>
 
-                <button type="submit">Iniciar Sesión</button>
-            </form>
+                    <button id="btn-iniciar" type="submit">Iniciar Sesión</button>
+                </form>
 
-            <p><a href="crearcuenta.html">Crear cuenta</a></p>
+                <p><a href="crearcuenta.html">Crear cuenta</a></p>
+            </div>
 
 
         </main>

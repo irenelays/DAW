@@ -77,7 +77,7 @@ nav ul li a {
     font-weight: bold;
     padding: 10px;
     display: inline-block;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 nav ul li a:hover {
@@ -95,6 +95,7 @@ footer {
     color: #fff;
     padding: 15px 0;
     font-size: 14px;
-    position: relative;
+    position: absolute; /* Posiciona el footer al final de la página */
+    margin-top: 10px; /* Separación del footer con el contenido de main */
     bottom: 0;
 }

@@ -11,6 +11,7 @@
         <meta name="author" content="Irene Leis Montes, Gabriel Novo Vila">
 
         <link rel="stylesheet" href="../css/estilos.css">
+        <link rel="stylesheet" href="../css/micuenta.css">
     </head>
 
     <body>
@@ -22,11 +23,11 @@
 
             <nav>
                 <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="foro.html">Foro</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="recetas.html">Recetas</a></li>
-                    <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="foro.html">FORO</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="recetas.html">RECETAS</a></li>
+                    <li><a href="sobrenosotros.html">SOBRE NOSOTROS</a></li>
                 </ul>
             </nav>
         </header>
@@ -34,18 +35,20 @@
         <main>
             <section id="registro">
                 <h2>Crear Cuenta</h2>
-                <form action="gestionarperfil.html" method="post">
-                    <label for="nombre">Nombre usuario:</label>
-                    <input type="text" name="nombre" id="nombre" required>
+                <div class="contenedor-formulario">
+                    <form action="gestionarperfil.html" method="post">
+                        <label for="nombre">Nombre usuario</label>
+                        <input type="text" name="nombre" id="nombre" required>
 
-                    <label for="pswd">Contraseña:</label>
-                    <input type="password" name="pswd" id="pswd" required>
+                        <label for="pswd">Contraseña</label>
+                        <input type="password" name="pswd" id="pswd" required>
 
-                    <label for="confirmar_pswd">Confirmar contraseña:</label>
-                    <input type="password" name="confirmar_pswd" id="confirmar_pswd" required>
+                        <label for="confirmar_pswd">Confirmar contraseña</label>
+                        <input type="password" name="confirmar_pswd" id="confirmar_pswd" required>
 
-                    <button type="submit">Registrarse</button>
-                </form>
+                        <button id="btn-crear" type="submit">Registrarse</button>
+                    </form>
+                </div>
             </section>
         </main>
 
