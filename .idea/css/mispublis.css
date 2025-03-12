@@ -1,0 +1,116 @@
+/* Contenedor principal que agrupa aside y posts */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    position: relative;
+}
+
+/* 🟢 ASIDE - Colocado en la parte superior izquierda */
+aside {
+    font-family: Inter,sans-serif;
+    font-size: 16px;
+    width: 25%;
+    position: absolute; /* Se posiciona sin afectar los posts */
+    top: 0;
+    left: 0;
+}
+
+aside a {
+    display: block;
+    background-color: #2C2C2C; /* Fondo oscuro para cada enlace */
+    color: white;
+    padding: 5px; /* Espaciado interno */
+    margin: 10px 0; /* Espacio entre elementos */
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+}
+
+aside a:hover {
+    background-color: #555;
+}
+
+aside a.activo {
+    background-color: #555; /* Color gris cuando estás en la página */
+    color: white;
+    cursor: default; /* Opcional: evita que parezca un enlace clickeable */
+}
+
+
+
+main {
+    width: 70%;
+    margin-left: 27%; /* Se separa del aside */
+    padding: 20px 0;
+}
+
+/* 📌 Sección de publicaciones - Grid con filas de 3 elementos */
+#posts {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 15px; /* Espaciado entre elementos */
+    padding: 20px;
+}
+
+/* 🟠 Cada post en su lugar */
+.post {
+    background-color: #1A1A1A; /* Fondo negro */
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #333;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+/* Alinear elementos dentro del post */
+.post img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;
+}
+
+/* 📍 Ajustar texto dentro del post */
+.post p {
+    font-size: 16px;
+    margin: 0;
+    display: block;
+}
+
+/* 🔘 Botón de "Añadir comentario" */
+.comentar-btn {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    background-color: #704214;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comentar-btn:hover {
+    background-color: #8B5A2B;
+}
+
+/* 🟢 "Añadir publicación" - Lo colocamos en la 2ª fila, 1ª columna */
+#addpost {
+    grid-column: 1 / 2; /* Primera columna */
+    grid-row: 2 / 3; /* Segunda fila */
+    background-color: #1A1A1A; /* Mismo fondo que los posts */
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    border: 2px dashed #888;
+}
+
+#addpost:hover {
+    background-color: #333;
+}

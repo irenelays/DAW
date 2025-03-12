@@ -95,7 +95,7 @@ footer {
     color: #fff;
     padding: 15px 0;
     font-size: 14px;
-    position: absolute; /* Posiciona el footer al final de la página */
+    position: fixed; /* Posiciona el footer al final de la página */
     margin-top: 10px; /* Separación del footer con el contenido de main */
     bottom: 0;
 }

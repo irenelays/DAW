@@ -11,6 +11,7 @@
         <meta name="author" content="Irene Leis Montes, Gabriel Novo Vila">
 
         <link rel="stylesheet" href="../css/estilos.css">
+        <link rel="stylesheet" href="../css/mispublis.css">
     </head>
 
     <body>
@@ -31,28 +32,46 @@
             </nav>
         </header>
 
-        <main>
-            <h2>Mis publicaciones</h2> <!-- Como hago la sección de posts?? -->
-
-            <section id="posts"> <!-- Sección de posts, va a ser dinámico (como añadir nuevo post¿) -->
-                <article>
-                    <p>Post 1</p>
-                </article>
-
-                <article>
-                    <p>Post 2</p>
-                </article>
-
-                <article>
-                    <p>Añadir publicación</p> <!-- Quiero que sea una ventana emergente, no un hiperlink -->
-                </article>
-            </section>
-
+        <div class="container">
+            <!-- ASIDE -->
             <aside>
                 <a href="foro.html">Publicaciones Populares</a>
-                <a href="mispublis.html">Mis Publicaciones</a>
+                <a href="mispublis.html" class="activo">Mis Publicaciones</a>
             </aside>
-        </main>
+
+            <!-- MAIN -->
+            <main>
+                <section id="posts">
+                    <!-- Post 1 -->
+                    <div class="post">
+                        <img src="../imagenes/avatar.png" alt="Usuario" class="avatar">
+                        <p>Post 1 - Nombre del usuario</p>
+                        <button class="comentar-btn">Añadir Comentario</button>
+                    </div>
+
+                    <!-- Post 2 -->
+                    <div class="post">
+                        <img src="../imagenes/avatar.png" alt="Usuario" class="avatar">
+                        <p>Post 2 - Nombre del usuario</p>
+                        <button class="comentar-btn">Añadir Comentario</button>
+                    </div>
+
+                    <!-- Post 3 -->
+                    <div class="post">
+                        <img src="../imagenes/avatar.png" alt="Usuario" class="avatar">
+                        <p>Post 3 - Nombre del usuario</p>
+                        <button class="comentar-btn">Añadir Comentario</button>
+                    </div>
+
+                    <!-- Segunda fila -->
+                    <div id="addpost">
+                        <p>Añadir publicación</p>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+
 
         <footer>
             <p>&copy; 2025 CulinarIA - Todos los derechos reservados</p>
