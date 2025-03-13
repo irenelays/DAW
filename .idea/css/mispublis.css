@@ -2,17 +2,16 @@
 .container {
     width: 80%;
     margin: 20px auto;
-    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 80px;
 }
 
-/* 🟢 ASIDE - Colocado en la parte superior izquierda */
+/*  Colocado en la parte superior izquierda */
 aside {
     font-family: Inter,sans-serif;
     font-size: 16px;
-    width: 25%;
-    position: absolute; /* Se posiciona sin afectar los posts */
-    top: 0;
-    left: 0;
+    width: 20%;
 }
 
 aside a {
@@ -20,11 +19,12 @@ aside a {
     background-color: #2C2C2C; /* Fondo oscuro para cada enlace */
     color: white;
     padding: 5px; /* Espaciado interno */
-    margin: 10px 0; /* Espacio entre elementos */
+    margin: 0; /* Espacio entre elementos */
     text-decoration: none;
     font-weight: bold;
     border-radius: 10px;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 aside a:hover {
@@ -34,83 +34,105 @@ aside a:hover {
 aside a.activo {
     background-color: #555; /* Color gris cuando estás en la página */
     color: white;
-    cursor: default; /* Opcional: evita que parezca un enlace clickeable */
+    cursor: default; /*  evita que parezca un enlace clickeable */
 }
-
-
 
 main {
-    width: 70%;
-    margin-left: 27%; /* Se separa del aside */
-    padding: 20px 0;
+    flex-grow: 1; /* Toma  el espacio restante */
+    padding: 0;
+    min-height: 80vh;
+    max-width: 100%; /* Asegura que no crezca más del 80% del ancho de la pantalla */
+    margin: 0 auto; /* Centra el contenido */
+    overflow: hidden; /* Evita que el contenido se desborde */
 }
 
-/* 📌 Sección de publicaciones - Grid con filas de 3 elementos */
+/* 📌 Sección de publicaciones */
 #posts {
-    width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
-    gap: 15px; /* Espaciado entre elementos */
-    padding: 20px;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual tamaño */
+    gap: 30px; /* Espaciado entre elementos */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; /* Centra el grid dentro de main */
+    padding: 30px; /* Añade espacio a los lados */
+    justify-content: center; /* Asegura que el grid esté centrado */
 }
 
-/* 🟠 Cada post en su lugar */
+
+/*  Estructura de cada post */
 .post {
-    background-color: #1A1A1A; /* Fondo negro */
-    color: white;
-    padding: 15px;
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Divide en 3 filas: imagen, texto, botón */
+    background-color: white;
     border-radius: 10px;
-    border: 1px solid #333;
+    padding: 15px;
+    width: 250px; /* Ajusta según sea necesario */
+    min-height: 300px; /* Controla el alto mínimo */
+    text-align: center;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/*  Ajustar la imagen del usuario */
+.post img {
+    width: 100%; /* Que ocupe  el ancho del post */
+    height: 250px; /* Tamaño fijo para que sean uniformes */
+    object-fit: cover; /* Evita distorsión y mantiene proporciones */
+    border-radius: 10px 10px 0 0; /* Redondea la parte superior */
+}
+
+.post p{
+    font-size: 16px;
+    text-align: left;
+    margin: 10px 0;
+}
+
+/*  Ajuste del texto */
+.post a {
+    font-size: 16px;
+    text-decoration: none;
+    color:#888;
+    margin: 10px 0;
     text-align: left;
 }
 
-/* Alinear elementos dentro del post */
-.post img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    float: left;
-    margin-right: 10px;
-}
-
-/* 📍 Ajustar texto dentro del post */
-.post p {
-    font-size: 16px;
-    margin: 0;
-    display: block;
-}
-
-/* 🔘 Botón de "Añadir comentario" */
-.comentar-btn {
-    width: 100%;
-    padding: 8px;
-    margin-top: 10px;
-    background-color: #704214;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.comentar-btn:hover {
-    background-color: #8B5A2B;
-}
-
-/* 🟢 "Añadir publicación" - Lo colocamos en la 2ª fila, 1ª columna */
+/* "Añadir publicación" - Que tenga el mismo tamaño que un post */
 #addpost {
-    grid-column: 1 / 2; /* Primera columna */
-    grid-row: 2 / 3; /* Segunda fila */
-    background-color: #1A1A1A; /* Mismo fondo que los posts */
-    color: white;
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
+    font-size: 20px;
+    grid-column: span 1; /* Ocupará el mismo ancho que un post */
+    grid-row: auto; /* Mantiene la estructura */
     cursor: pointer;
-    font-weight: bold;
-    border: 2px dashed #888;
+    border-radius: 10px;
+    padding: 15px;
+    width: 250px; /* Igual que los posts */
+    min-height: 300px; /* Igual que los posts */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#addpost:hover {
-    background-color: #333;
+/*  Ajustar la imagen dentro de #addpost */
+#addpost img {
+    width: 80%;  /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantiene la proporción */
+    max-width: 100%; /* Asegura que no se desborde */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Efecto hover */
+#addpost img:hover {
+    transform: scale(1.1); /* Hace un zoom al pasar el mouse */
+}
+
+@media (max-width: 1200px) {
+    #posts {
+        grid-template-columns: repeat(2, minmax(250px, 1fr)); /* 2 columnas en tablets */
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    #posts {
+        grid-template-columns: repeat(1, minmax(250px, 1fr)); /* 1 columna en móviles */
+        padding: 20px;
+    }
 }
