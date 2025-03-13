@@ -1,11 +1,11 @@
 body {
     background-image: url("../imagenes/fondo.svg");
+    background-color: #BFAA8F;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-size: 21px;
     font-family: 'Roboto', sans-serif;
-    background-color: #BFAA8F;
     color: #333;
     line-height: 1.6;
     padding: 0;
@@ -13,24 +13,23 @@ body {
     height: 100%;
 }
 
-h2{
+h2 {
+    font-family: 'Asar', serif;
     font-size: 1.7em;
-    font-family: 'Asar', serif; /* Entendí que no quería serif, pero en el mockup aparece con serif*/
 }
 
 main {
     text-align: center;
     padding: 20px;
-    min-height: 100vh;
+    min-height: auto;
     padding-bottom: 50px;
 }
 
 header {
     background-color: transparent;
     width: 80%;
-    margin: 0 auto; /* Centra el header en la página */
+    margin: 0 auto;
     padding: 20px 0;
-
     position: relative;
     text-align: center;
 }
@@ -77,13 +76,10 @@ nav ul li a {
     font-size: 18px;
 }
 
-nav ul li a:hover {
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 5px;
-}
-
 footer {
-    margin-top: 50px;
+    position:fixed;
+    bottom: 0;
+    left: 0;
     width: 100%;
     text-align: center;
     background-color: #333;

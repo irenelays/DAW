@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="87.317207mm"
+   height="83.424927mm"
+   viewBox="0 0 87.317207 83.424927"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   sodipodi:docname="estrellarellena.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.70500941"
+     inkscape:cx="80.849985"
+     inkscape:cy="169.50128"
+     inkscape:window-width="1142"
+     inkscape:window-height="993"
+     inkscape:window-x="809"
+     inkscape:window-y="60"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-83.872919,-103.45208)">
+    <path
+       sodipodi:type="star"
+       style="fill:#ffff00;fill-opacity:1;stroke:#ffff00;stroke-width:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path3-2"
+       inkscape:flatsided="false"
+       sodipodi:sides="5"
+       sodipodi:cx="90.903343"
+       sodipodi:cy="173.34201"
+       sodipodi:r1="43.769241"
+       sodipodi:r2="18.383081"
+       sodipodi:arg1="0.73781506"
+       sodipodi:arg2="1.3661336"
+       inkscape:rounded="0.1"
+       inkscape:randomized="0"
+       d="m 123.28996,202.78439 c -2.07527,2.2828 -25.62977,-12.06997 -28.650496,-11.44296 -3.020725,0.62701 -18.917107,23.16855 -21.729471,21.90028 -2.812365,-1.26828 3.559187,-28.10519 2.02941,-30.78431 -1.529776,-2.67912 -27.880312,-10.83176 -27.543178,-13.8984 0.337135,-3.06664 27.829468,-5.29999 29.90474,-7.58279 2.075271,-2.2828 1.686126,-29.86295 4.706851,-30.48996 3.020726,-0.62701 13.64037,24.82961 16.452735,26.09789 2.812369,1.26827 28.922399,-7.62456 30.452169,-4.94544 1.52978,2.67913 -19.39925,20.64554 -19.73639,23.71217 -0.33713,3.06664 16.1889,25.15072 14.11363,27.43352 z"
+       transform="rotate(11.451281,229.53628,344.25697)" />
+  </g>
+</svg>

@@ -1,11 +1,11 @@
 /* Estilos específicos para las páginas de iniciar sesión y crear cuenta */
 
 main {
-    width: 80%; /* Ocupar el 80% del ancho */
-    margin: 0 auto; /* Centra el main en la página */
+    width: 80%;
+    margin: 0 auto;
     text-align: center;
     padding: 20px 0;
-    min-height: 65vh; /* Altura mínima del 80% de la ventana */
+    min-height: 65vh;
     background-color: white;
 }
 
@@ -17,15 +17,14 @@ h2 {
     text-align: left;
 }
 
-/* Contenedor del formulario */
 .contenedor-formulario {
-    width: 35%; /* Tamaño del formulario */
-    margin: 0 auto; /* Centrarlo en el main */
+    width: 35%;
+    margin: 0 auto;
     padding: 50px;
-    border-radius: 5px; /* Bordes redondeados */
-    border: 1px solid #D9D9D9 ; /* Borde visible */
-    background-color: white; /* Fondo blanco para hacerlo visible */
-    text-align: left; /* Para que el texto dentro quede alineado a la izquierda */
+    border-radius: 5px;
+    border: 1px solid #D9D9D9 ;
+    background-color: white;
+    text-align: left;
 }
 
 .contenedor-formulario label {
@@ -36,12 +35,12 @@ h2 {
 
 .contenedor-formulario input {
     width: 100%;
-    padding: 8px; /* Espaciado interno */
+    padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
     display: block;
-    margin-bottom: 50px; /* Espacio entre los inputs */
+    margin-bottom: 50px;
     color: #B3B3B3;
 }
 
@@ -54,7 +53,7 @@ h2 {
     border: none;
     border-radius: 5px;
     font-size: 18px;
-    cursor: pointer /* Cambia el cursor al pasar por encima */;
+    cursor: pointer;
     margin-top: 15px;
 }
 
@@ -68,27 +67,20 @@ h2 {
     border: none;
     border-radius: 5px;
     font-size: 18px;
-    cursor: pointer /* Cambia el cursor al pasar por encima */;
+    cursor: pointer ;
     margin-top: 15px;
 }
 
 .contenedor-formulario p {
-    margin-top: 30px; /* Aumenta la separación entre el botón y el enlace */
-    text-align: center; /* Asegura que el enlace esté centrado */
+    margin-top: 30px;
+    text-align: center;
 }
 
 .contenedor-formulario p a {
-    color: #888; /* Color gris suave */
+    color: #888;
     font-size: 16px;
 }
 
-.contenedor-formulario p a:hover {
-    color: #555; /* Color más oscuro al pasar el mouse */
-    text-decoration: underline; /* Efecto visual al pasar sobre el enlace */
-}
 
-.contenedor-formulario  button:hover {
-    background-color: #593520;
-}
 
 
