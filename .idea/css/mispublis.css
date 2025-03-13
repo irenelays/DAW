@@ -54,7 +54,6 @@ main {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto; /* Centra el grid dentro de main */
-    padding: 30px; /* Añade espacio a los lados */
     justify-content: center; /* Asegura que el grid esté centrado */
 }
 
@@ -126,13 +125,11 @@ main {
 @media (max-width: 1200px) {
     #posts {
         grid-template-columns: repeat(2, minmax(250px, 1fr)); /* 2 columnas en tablets */
-        padding: 20px;
     }
 }
 
 @media (max-width: 768px) {
     #posts {
         grid-template-columns: repeat(1, minmax(250px, 1fr)); /* 1 columna en móviles */
-        padding: 20px;
     }
 }
