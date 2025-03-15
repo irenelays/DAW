@@ -33,59 +33,17 @@
             </nav>
         </header>
 
-
-        <main>
-            <section id="posts">
-                <div class="post">
-                    <a href="enconstruccion.html">
-                        <h3>Los orígenes del café</h3>
-                        <p>CulinarIA</p>
-                        <p>9/2/2025</p>
-                        <img src="../imagenes/cafe.png" alt="Img café">
-                    </a>
-                </div>
-
-                <div class="post">
-                    <a href="enconstruccion.html">
-                        <h3>La técnica de la esferificación</h3>
-                        <p>CulinarIA</p>
-                        <p>9/2/2025</p>
-                        <img src="../imagenes/esferificacion.png" alt="Img esferificación">
-                    </a>
-                </div>
-
-                <div class="post">
-                    <a href="enconstruccion.html">
-                        <h3>Beneficios de una alimentación saludable</h3>
-                        <p>CulinarIA</p>
-                        <p>9/2/2025</p>
-                        <img src="../imagenes/verduras.png" alt="Img verduras">
-                    </a>
-                </div>
-
-                <div class="post">
-                    <a href="enconstruccion.html">
-                        <h3>Nada mejor que unas filloas caseras por carnaval</h3>
-                        <p>CulinarIA</p>
-                        <p>9/2/2025</p>
-                        <img src="../imagenes/filloas.png" alt="Img filloas">
-                    </a>
-                </div>
-            </section>
-
+        <div id="container">
             <aside>
-                <h3>Filtrar</h3>
-
-                <form action="enconstruccion.html" method="GET"> <!-- # en vez de un archivo, no implementando backend  PONER PAGINA DE EN CONSTRUCCION-->
-                    <h4>Temática</h4>
-                    <label><input type="radio" name="tematica" value="mitos"> Mitos</label><br>
-                    <label><input type="radio" name="tematica" value="ciencia"> Ciencia en la cocina</label><br>
-                    <label><input type="radio" name="tematica" value="tecnicas"> Técnicas culinarias</label><br>
+                <form action="enconstruccion.html" method="GET">
+                    <h4>Filtros</h4>
+                    <label><input type="radio" name="tematica" value="mitos"> Mitos</label>
+                    <label><input type="radio" name="tematica" value="ciencia"> Ciencia en la cocina</label>
+                    <label><input type="radio" name="tematica" value="tecnicas"> Técnicas culinarias</label>
                     <label><input type="radio" name="tematica" value="historia"> Historia de los alimentos</label>
 
 
-                    <h4>Fecha</h4>
-                    <label for="mes">Mes:</label>
+                    <h4>Por fecha</h4>
                     <select id="mes">
                         <option value="enero">Enero</option>
                         <option value="febrero">Febrero</option>
@@ -101,7 +59,6 @@
                         <option value="diciembre">Diciembre</option>
                     </select>
 
-                    <label for="anho">Año:</label>
                     <select id="anho">
                         <option value="2025">2025</option>
                     </select>
@@ -109,7 +66,61 @@
                     <button type="submit">Filtrar</button>
                 </form>
             </aside>
-        </main>
+
+            <main>
+                <section id="posts">
+                    <a href="enconstruccion.html">
+                        <div class="post">
+                            <img src="../imagenes/cafe.png" alt="Img café">
+                            <div class="texto">
+                                <h3>Los orígenes del café</h3>
+                                <p>CulinarIA</p>
+                                <p>9/2/2025</p>
+                            </div>
+
+
+                        </div>
+                    </a>
+
+                    <a href="enconstruccion.html">
+                        <div class="post">
+                            <img src="../imagenes/esferificacion.png" alt="Img esferificación">
+                            <div class="texto">
+                                <h3>La técnica de la esferificación</h3>
+                                <p>CulinarIA</p>
+                                <p>9/2/2025</p>
+                            </div>
+
+
+                        </div>
+                    </a>
+
+                    <a href="enconstruccion.html">
+                        <div class="post">
+                            <img src="../imagenes/verduras.png" alt="Img verduras">
+                            <div class="texto">
+                                <h3>Beneficios de una alimentación saludable</h3>
+                                <p>CulinarIA</p>
+                                <p>9/2/2025</p>
+                            </div>
+
+                        </div>
+                    </a>
+                    <a href="enconstruccion.html">
+                        <div class="post">
+                            <img src="../imagenes/filloas.png" alt="Img filloas">
+                            <div class="texto">
+                                <h3>Nada mejor que unas filloas caseras por carnaval</h3>
+                                <p>CulinarIA</p>
+                                <p>9/2/2025</p>
+                            </div>
+                        </div>
+                    </a>
+                </section>
+            </main>
+        </div>
+
+
 
 
         <footer>

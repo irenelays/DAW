@@ -1,6 +1,6 @@
 /* Estilos específicos para las páginas de posts populares y misposts */
 
-.container {
+#container {
     width: 80%;
     margin: 20px auto;
     display: grid;

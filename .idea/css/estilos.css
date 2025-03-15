@@ -1,3 +1,4 @@
+/* Estilos generales para todas las páginas */
 body {
     background-image: url("../imagenes/fondo.svg");
     background-color: #BFAA8F;
@@ -11,18 +12,14 @@ body {
     padding: 0;
     margin: 0;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 h2 {
     font-family: 'Asar', serif;
     font-size: 1.7em;
-}
-
-main {
-    text-align: center;
-    padding: 20px;
-    min-height: auto;
-    padding-bottom: 50px;
 }
 
 header {
@@ -76,14 +73,23 @@ nav ul li a {
     font-size: 18px;
 }
 
+main {
+    flex-grow: 1; /* Empuja el footer hacia abajo */
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el contenido verticalmente */
+    min-height: 60vh; /* Asegura que haya espacio visible */
+    margin-bottom: 50px; /* Crea el hueco entre main y footer */
+}
+
 footer {
-    position:fixed;
-    bottom: 0;
-    left: 0;
     width: 100%;
     text-align: center;
     background-color: #333;
     color: #fff;
     padding: 15px 0;
     font-size: 14px;
+    margin-top: auto;
 }
