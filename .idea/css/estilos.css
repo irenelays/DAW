@@ -39,7 +39,7 @@ header .logoico {
 }
 
 header .micuentaico {
-    width: 45px;
+    width: 55px;
     height: auto;
     float: right;
 }
@@ -47,7 +47,7 @@ header .micuentaico {
 nav {
     background-color: #593520;
     width: 100%;
-    padding: 10px 0;
+    padding: 0;
     text-align: center;
     margin-top: 70px;
 }
@@ -74,14 +74,13 @@ nav ul li a {
 }
 
 main {
-    flex-grow: 1; /* Empuja el footer hacia abajo */
+    flex-grow: 1;
     text-align: center;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centra el contenido verticalmente */
-    min-height: 60vh; /* Asegura que haya espacio visible */
-    margin-bottom: 50px; /* Crea el hueco entre main y footer */
+    justify-content: center;
+    min-height: 60vh;
 }
 
 footer {
@@ -91,5 +90,5 @@ footer {
     color: #fff;
     padding: 15px 0;
     font-size: 14px;
-    margin-top: auto;
+    margin-top: 30px;
 }
