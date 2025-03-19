@@ -5,6 +5,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+
     font-size: 21px;
     font-family: 'Roboto', sans-serif;
     color: #333;
@@ -90,5 +91,5 @@ footer {
     color: #fff;
     padding: 15px 0;
     font-size: 14px;
-    margin-top: 30px;
+    margin-top: auto;
 }
