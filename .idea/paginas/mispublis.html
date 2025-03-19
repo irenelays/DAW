@@ -20,19 +20,15 @@
     <body>
         <header>
             <div class="contenedor-img">
+                <!-- revisar si tengo que poner una etiqueta de bloqeu en esto -->
                 <a href="index.html">
-                    <figure>
-                        <img src="../imagenes/culinarialogo.svg" alt="CulinarIA" class="logoico">
-                    </figure>
+                    <img src="../imagenes/culinarialogo.svg" alt="CulinarIA" class="logoico">
                 </a>
 
                 <a href="iniciarsesion.html">
-                    <figure >
-                        <img src="../imagenes/micuenta.svg" alt="Mi Cuenta" class="micuentaico">
-                    </figure>
+                    <img src="../imagenes/micuenta.svg" alt="Mi Cuenta" class="micuentaico">
                 </a>
             </div>
-
 
             <nav>
                 <ul>
@@ -47,35 +43,48 @@
 
         <div id="container">
             <aside>
-                <a href="foro.html">Publicaciones Populares</a>
-                <a href="mispublis.html" class="activo">Mis Publicaciones</a>
+                <nav>
+                    <ul>
+                        <li><a href="foro.html" class="activo">Publicaciones Populares</a></li>
+                        <li><a href="mispublis.html">Mis Publicaciones</a></li>
+                    </ul>
+                </nav>
             </aside>
 
             <main>
                 <section id="posts">
                     <div class="post">
-                        <img src="../imagenes/tarta.png" alt="Img post 1"  >
-                        <p>LolaFlores_333</p>
-                        <a href="enconstruccion.html">Añadir comentario...</a>
+                        <figure>
+                            <img src="../imagenes/tarta.png" alt="Img post 1">
+                            <figcaption>LolaFlores_333</figcaption>
+                        </figure>
+                        <p><a href="enconstruccion.html">Comentarios</a></p>
                     </div>
 
                     <div class="post">
-                        <img src="../imagenes/croquetas.png" alt="Img post 2"  >
-                        <p>LolaFlores_333</p>
-                        <a href="enconstruccion.html">Añadir comentario...</a>
+                        <figure>
+                            <img src="../imagenes/croquetas.png" alt="Img post 1">
+                            <figcaption>LolaFlores_333</figcaption>
+                        </figure>
+                        <p><a href="enconstruccion.html">Comentarios</a></p>
                     </div>
 
                     <div class="post">
-                        <img src="../imagenes/fabada.png" alt="Img post 3" >
-                        <p>LolaFlores_333</p>
-                        <a href="enconstruccion.html">Añadir comentario...</a>
+                        <figure>
+                            <img src="../imagenes/fabada.png" alt="Img post 1">
+                            <figcaption>LolaFlores_333</figcaption>
+                        </figure>
+                        <p><a href="enconstruccion.html">Comentarios</a></p>
                     </div>
 
                     <div class="post" id="addpost">
-                        <a href="enconstruccion.html">
-                            <img src="../imagenes/añadirpublicacion.svg" alt="Añadir publicación">
-                        </a>
+                        <p>
+                            <a href="enconstruccion.html">
+                                <img src="../imagenes/añadirpublicacion.svg" alt="Añadir publicación">
+                            </a>
+                        </p>
                     </div>
+
                 </section>
             </main>
         </div>
@@ -84,7 +93,4 @@
             <p>&copy; 2025 CulinarIA - Todos los derechos reservados</p>
         </footer>
     </body>
-
-
-
 </html>

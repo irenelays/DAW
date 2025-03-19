@@ -60,7 +60,7 @@ header .micuentaico {
     width: 50px;
 }
 
-nav {
+header nav {
     background-color: #593520;
     width: 100%;
     max-width: 1200px;
@@ -68,19 +68,19 @@ nav {
     text-align: center;
 }
 
-nav ul {
+header nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     text-align: center;
 }
 
-nav ul li {
+header nav ul li {
     display: inline-block;
     width: 18%;
 }
 
-nav ul li a {
+header nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
