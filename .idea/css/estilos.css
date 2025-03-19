@@ -1,4 +1,11 @@
 /* Estilos generales para todas las páginas */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-image: url("../imagenes/fondo.svg");
     background-color: #BFAA8F;
@@ -10,8 +17,6 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #333;
     line-height: 1.6;
-    padding: 0;
-    margin: 0;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -26,6 +31,7 @@ h2 {
 header {
     background-color: transparent;
     width: 80%;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px 0;
     position: relative;
@@ -37,6 +43,7 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    max-width: 1200px;
     padding: 0;
     margin: 0;
     margin-bottom: 5px;
@@ -56,6 +63,7 @@ header .micuentaico {
 nav {
     background-color: #593520;
     width: 100%;
+    max-width: 1200px;
     padding: 0;
     text-align: center;
 }
