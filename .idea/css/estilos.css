@@ -17,16 +17,14 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #333;
     line-height: 1.6;
+
     height: 100%;
+    min-height: 100vh;
+
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
 }
 
-h2 {
-    font-family: 'Asar', serif;
-    font-size: 1.7em;
-}
 
 header {
     background-color: transparent;
@@ -38,7 +36,7 @@ header {
     text-align: center;
 }
 
-.contenedor-img{
+header .contenedor-img{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,9 +47,10 @@ header {
     margin-bottom: 5px;
 }
 
-figure{
+header figure{
     margin: 0;
 }
+
 header .logoico {
     width:200px;
 }
