@@ -1,0 +1,274 @@
+/* Estilos generales */
+body {
+    font-family: "Roboto Light", sans-serif;
+    background-color: #BFAA8F;
+    margin: 0px auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+}
+/* Estilos para el header */
+header {
+    display: flex;                       /* Usamos Flexbox para alinear los elementos */
+    justify-content: space-around;      /* Alineamos el logo a la izquierda y "Mi Cuenta" a la derecha */
+    align-items: center;                 /* Alineamos las imágenes verticalmente al centro */
+    padding: 10px;                       /* Espaciado dentro del header */
+    flex-wrap: wrap;                     /* Permitimos que los elementos se envuelvan en caso de que sea necesario */
+}
+
+/* Imagen de logo */
+#logoico {
+    display: flex;
+    margin:0px auto;
+}
+
+/* Imagen "Mi Cuenta" */
+header .micuentaico {
+    width: 50px;                         /* Ajustamos el tamaño de la imagen de "Mi Cuenta" */
+    height: 50px;
+    border-radius: 100%;
+    right: 10px;
+    top: 10px;
+    background-color: white;
+}
+
+.acercaNosotros{
+    width:200px;
+    height:25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: #593520;
+    color:white;
+    border-radius: 10px;
+}
+
+#logoCulinarIA{
+    display: flex;
+    margin:0px auto;
+}
+
+/* Estilos para el menú de navegación */
+nav {
+    width: 70%;                         /* Aseguramos que el menú ocupe  el ancho disponible */
+    text-align:center;                  /* Centrar los enlaces del menú */
+    margin: 10px auto;                    /* Añadimos un pequeño margen en la parte superior para separarlo de las imágenes */
+}
+
+nav ul {
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    background-color: #593520;
+    list-style: none;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    font-family: "Roboto Light", sans-serif;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    flex: 1; /* Esto hace que el contenido ocupe el espacio disponible */
+    width: 1024px;
+    margin: 20px auto;
+    background-image: url("../imagenes/fondo.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #BFAA8F;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+
+.grid-container {
+    display: grid;
+    gap: 5px; /* Reducimos la separación */
+    padding: 10px;
+    width: 80%;
+    height:auto;
+    align-items: center;
+    max-width: 1024px; /* Limitar el tamaño del grid */
+    margin: auto;
+    
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+
+    grid-template-areas:
+        "leader lado"
+        "abajo lado";
+
+}
+
+.contenedor-cabecera{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 20px;
+    color:white;
+    border-radius: 10px;
+}
+
+/* Texto sobre la imagen */
+.item {
+    position: relative; /* Para que el span se posicione en relación con la imagen */
+    display: inline-block; /* Evita que se expanda innecesariamente */
+}
+
+.item span {
+    position: absolute; /* Lo coloca sobre la imagen */
+    bottom: 10px; /* Ajusta su posición */
+    left: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block; /* Hace que respete width y padding */
+    max-width:80%;
+    z-index: 10; /* Asegura que esté por encima de la imagen */
+}
+
+
+.leader{
+    width:100%;
+    height:100%;
+}
+/* 🔹 Imagen principal */
+.leader img{
+    width:464px;
+    grid-area: leader;
+    max-height: 464px; /* Tamaño controlado */
+}
+
+/* 🔹 Imágenes de la derecha */
+.lado {
+    grid-area: lado;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.lado img {
+    width: 275px;
+    height: 275px;
+}   
+
+
+/* 🔹 Imágenes de abajo */
+.abajo {
+    grid-area: abajo;
+
+    display: flex;
+    gap: 5px;
+}
+
+.abajo img {
+
+    width:180px;
+    height:180px;
+}
+
+/* 🔹 Responsividad */
+@media (max-width: 900px) {
+    main{
+        width:70%;
+    }
+
+    #logoCulinarIA{
+        width:70%;
+        height: 70%;
+    }
+
+    #logoico{
+        width:40%;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "leader"
+            "lado"
+            "abajo";
+    }
+
+    .leader{
+        width:40%;
+    }
+
+    .lado{
+        width: 40%;
+    }
+
+    .abajo{
+        width: 40%;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    .abajo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .leader{
+        width:60%;
+    }
+
+    .lado{
+        width: 30%;
+    }
+
+    .lado img{
+        width: 120.5px;
+        height: 120.5px;
+    }
+
+    .abajo{
+        width: 30%;
+        flex-direction:column;
+        align-items: center;
+    }
+
+    .abajo img{
+        width: 78.7px;
+        height: 78.7px;
+    }   
+
+    .item span{
+        font-size: 10px;
+    }
+}
+
+/* Efecto hover */
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+
+/* Footer */
+footer {
+    font-family: Inter, sans-serif;
+    text-align: right; /* Alinea el texto a la derecha */
+    padding: 10px 20px; /* Ajusta el espacio interno (arriba/abajo 10px, derecha/izquierda 20px) */
+    background: #333;
+    color: white; /* Color del texto*/
+    font-size: 12px; /* Reduce el tamaño de la fuente */
+}
