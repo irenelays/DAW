@@ -68,18 +68,17 @@ form select {
     margin-top: 5px;
 }
 
-/* Agregar la "X" cuando esté seleccionado */
 form input[type="radio"]:checked::after {
-    content: "✔"; /* Carácter X */
+    content: "✔";
     font-size: 16px;
-    color: black; /* Color de la X */
+    color: black;
     padding-bottom: 5px;
     padding-left: 2px;
 }
 
 form label{
     display: flex;
-    align-items: center; /* Alinea verticalmente el input y el texto */
+    align-items: center;
     gap:8px;
     font-family: Inter, sans-serif;
     font-size: 18px;
@@ -110,6 +109,7 @@ main {
 
 #posts {
     width: 100%;
+    max-width: 800px;
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -168,6 +168,40 @@ main {
     color: #757575;
     margin:0;
     padding: 0;
+}
+
+@media screen and (max-width: 1000px) {
+    #container {
+        flex-direction: column;
+    }
+
+    aside {
+        margin: 10px;
+    }
+
+    #posts .post {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .post img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .texto {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin: 2px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .texto h3 {
+        font-size: 1.2em;
+    }
 }
 
 

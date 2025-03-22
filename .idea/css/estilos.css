@@ -25,7 +25,6 @@ body {
     flex-direction: column;
 }
 
-
 header {
     background-color: transparent;
     width: 80%;
@@ -36,7 +35,7 @@ header {
     text-align: center;
 }
 
-header .contenedor-img{
+header .contenedor-img {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,12 +46,12 @@ header .contenedor-img{
     margin-bottom: 5px;
 }
 
-header figure{
+header figure {
     margin: 0;
 }
 
 header .logoico {
-    width:200px;
+    width: 200px;
 }
 
 header .micuentaico {
@@ -67,16 +66,26 @@ header nav {
     text-align: center;
 }
 
+#menu-toggle {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
 header nav ul {
     list-style: none;
+    display: flex;
+    justify-content: space-between;
     padding: 0;
     margin: 0;
-    text-align: center;
 }
 
 header nav ul li {
-    display: inline-block;
-    width: 18%;
+    flex: 1;
+    text-align: center;
 }
 
 header nav ul li a {
@@ -106,4 +115,40 @@ footer {
     padding: 15px 0;
     font-size: 14px;
     margin-top: auto;
+}
+
+
+@media screen and (max-width: 500px) {
+
+    header .logoico {
+        width: 125px;
+    }
+
+    header .micuentaico {
+        width: 40px;
+    }
+
+    #menu-toggle {
+        display: block;
+        margin: 10px auto;
+    }
+
+    #menu {
+        flex-direction: column;
+        gap: 10px;
+        overflow: hidden;
+        max-height: 0;
+        opacity: 0;
+        transition: max-height 0.4s ease, opacity 0.4s ease;
+    }
+
+    #menu.show {
+        max-height: 300px;
+        opacity: 1;
+    }
+
+    header nav ul li {
+        width: 100%;
+        padding: 10px 0;
+    }
 }
