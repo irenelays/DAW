@@ -8,8 +8,15 @@ body {
     flex-direction: column;
     min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
 }
+
+h2{
+    text-align: center;
+    font-family: "Asar", "Roboto Light", sans-serif;
+    font-size: 50px;
+    color: black;
+}
 /* Estilos para el header */
-header {
+header .contenedor-img{
     display: flex;                       /* Usamos Flexbox para alinear los elementos */
     justify-content: space-around;      /* Alineamos el logo a la izquierda y "Mi Cuenta" a la derecha */
     align-items: center;                 /* Alineamos las imágenes verticalmente al centro */
@@ -17,10 +24,15 @@ header {
     flex-wrap: wrap;                     /* Permitimos que los elementos se envuelvan en caso de que sea necesario */
 }
 
+header{
+    width: 1500px;
+    margin: 0 auto;
+}
+
 /* Imagen de logo */
 #logoico {
     display: flex;
-    margin:10px auto;
+    margin:0px auto;
 }
 
 /* Imagen "Mi Cuenta" */
@@ -95,13 +107,94 @@ main {
 }
 
 
+
+
+
+
+#busquedas{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    color:white;
+    border-radius: 10px;
+    grid-template-areas: "botones busqueda busqueda";
+}
+
+.buscador{
+    grid-area:"busqueda";
+
+    display:flex;
+    flex-direction: column;
+}
+
+#buscar{
+    width:500px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.botones{
+    grid-area:"botones";
+
+    margin-right: 50px;;
+}
+
+.botoncitos{
+
+    grid-area: "botoncitos";
+    width:200px;
+    height:35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: #593520;
+    color:white;
+    border-radius: 30px;
+    text-decoration: none;
+    
+}
+
+#comidas{
+    display:flex;
+    flex-direction: row;
+}
+
+#btn-iniciar{
+    background-image: url("../imagenes/lupa.png");
+    position:relative;
+    top:8px;
+    left:5px;
+    background-color: #593520;
+    background-size: contain;
+    width:30px;
+    height:30px;
+    border-radius:90px;
+    cursor:pointer;
+}
+
+.contenedor-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-left: 20px;
+    color:white;
+    border-radius: 10px;
+}
+
 .grid-container {
     display: grid;
     gap: 5px; /* Reducimos la separación */
     padding: 10px;
-    width: 80%;
+    width: 40%;
     height:auto;
-    align-items: center;
     max-width: 1024px; /* Limitar el tamaño del grid */
     margin: auto;
     
@@ -110,19 +203,31 @@ main {
 
     grid-template-areas:
         "leader lado"
+        "abajo lado"
+        "texto texto";
+}
+
+.grid-container2 {
+    display: grid;
+    gap: 5px; /* Reducimos la separación */
+    padding: 10px;
+    width: 40%;
+    height:auto;
+    max-width: 1024px; /* Limitar el tamaño del grid */
+    margin: auto;
+    
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto auto;
+
+    grid-template-areas:
+        "texto texto"
+        "leader lado"
         "abajo lado";
 
 }
 
-.contenedor-cabecera{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 20px;
-    margin-left: 20px;
-    color:white;
-    border-radius: 10px;
+.texto{
+    grid-area:texto;
 }
 
 /* Texto sobre la imagen */
@@ -140,7 +245,7 @@ main {
     padding: 5px 10px;
     border-radius: 5px;
     display: inline-block; /* Hace que respete width y padding */
-    max-width:80%;
+    max-width:60%;
     z-index: 10; /* Asegura que esté por encima de la imagen */
 }
 
@@ -148,12 +253,12 @@ main {
 .leader{
     width:100%;
     height:100%;
+    grid-area: leader;
 }
 /* 🔹 Imagen principal */
 .leader img{
-    width:464px;
-    grid-area: leader;
-    max-height: 464px; /* Tamaño controlado */
+    width:270px;
+    height: 270px; /*Tamaño controlado */
 }
 
 /* 🔹 Imágenes de la derecha */
@@ -165,8 +270,8 @@ main {
 }
 
 .lado img {
-    width: 275px;
-    height: 275px;
+    width:130px;
+    height:130px;
 }   
 
 
@@ -180,8 +285,8 @@ main {
 
 .abajo img {
 
-    width:180px;
-    height:180px;
+    width:130px;
+    height:130px;
 }
 
 /* 🔹 Responsividad */
