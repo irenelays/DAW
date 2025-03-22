@@ -97,10 +97,28 @@
             </main>
         </div>
 
+        <div id="emergenteAddPost">
+            <div class="container-emergente">
+                <span id="cerrarEmergente">&times;</span>
+                <h2>Nuevo post</h2>
+
+
+                <input type="file" id="imagenPost" name="imagenPost" accept="image/*">
+                <label for="imagenPost">
+                    <img src="../imagenes/addpost.svg" alt="Seleccionar imagen">
+                </label>
+
+                <textarea placeholder="Añadir descripción..."></textarea>
+                <button id="btnPublicar">Publicar</button>
+            </div>
+        </div>
+
+
         <footer>
             <p>&copy; 2025 CulinarIA - Todos los derechos reservados</p>
         </footer>
 
         <script src="../js/menutoggle.js"></script>
+        <script src="../js/nuevoPost.js"></script>
     </body>
 </html>
