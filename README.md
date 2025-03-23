@@ -10,3 +10,4 @@ CAMBIAR:
 
 PREGUNTAR:
   - en html si es correcto la líne de bloque de código que abaruq easí la de línea a mirar blog
+  - index en raiz y en /paginas ???
