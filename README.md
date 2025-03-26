@@ -1,5 +1,5 @@
 # DAW
-
+EJECUTAR SERVIDOR: py -m http.server 8000
 CAMBIAR:
 - FORO: arreglar que al ampliar el aside, el contenido al ampliarlo se vea correcto y no cause overflow. 
   -> también hay que arreglar el media
