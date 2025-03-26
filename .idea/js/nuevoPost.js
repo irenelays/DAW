@@ -1,8 +1,13 @@
-// Acceso a elementos
+// JES6
 const ventana = document.getElementById('emergenteAddPost');
 const btnAbrir = document.querySelector('#addpost a');
 const btnCerrar = document.getElementById('cerrarEmergente');
 const btnPublicar = document.getElementById('btnPublicar');
+
+function resetearFormulario() {
+    document.getElementById('imagenPost').value = ''; // Resetea la imagen seleccionada
+    document.querySelector('.container-emergente textarea').value = ''; // Limpia la descripción
+}
 
 // Abrir ventana emergente
 btnAbrir.addEventListener('click', (e) => {
@@ -15,15 +20,8 @@ btnCerrar.addEventListener('click', () => {
     ventana.style.display = 'none';
 });
 
-// Cerrar haciendo clic fuera
-window.addEventListener('click', (e) => {
-    if (e.target === ventana) {
-        ventana.style.display = 'none';
-    }
-});
-
-// Publicar (simulado)
 btnPublicar.addEventListener('click', () => {
     alert('Publicación subida (falta backend)');
     ventana.style.display = 'none';
+    resetearFormulario(); // Limpia el contenido
 });
