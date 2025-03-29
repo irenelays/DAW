@@ -11,3 +11,24 @@ CAMBIAR:
 PREGUNTAR:
   - en html si es correcto la líne de bloque de código que abaruq easí la de línea a mirar blog
   - index en raiz y en /paginas ???
+
+
+
+- quitar menuREsaltaritems y ponerlo en css
+- falta entonces lo de los metodos DOM revisar
+  
+document.addEventListener("DOMContentLoaded", function () {
+const items = document.getElementsByClassName("menu-item");
+
+    for (let i = 0; i < items.length; i++) {
+    const enlace = items[i].querySelector("a");
+
+          enlace.addEventListener("mouseover", function () {
+              enlace.classList.add("hover");
+          });
+
+          enlace.addEventListener("mouseout", function () {
+              enlace.classList.remove("hover");
+          });
+    }
+    });
