@@ -49,7 +49,7 @@
 
         <div id="container">
             <aside>
-                <form action="enconstruccion.html" method="GET">
+                <form action="#" method="GET">
                     <fieldset>
                         <legend>Filtros</legend>
                         <label><input type="radio" name="tematica" value="mitos"> Mitos</label>
@@ -61,6 +61,7 @@
                     <fieldset>
                         <legend>Por fecha</legend>
                         <select id="mes">
+                            <option value="" selected>-- Mes --</option>
                             <option value="enero">Enero</option>
                             <option value="febrero">Febrero</option>
                             <option value="marzo">Marzo</option>
@@ -76,7 +77,9 @@
                         </select>
 
                         <select id="anho">
+                            <option value="" selected>-- Año --</option>
                             <option value="2025">2025</option>
+                            <option value="2024">2024</option>
                         </select>
                     </fieldset>
 
@@ -86,57 +89,7 @@
 
             <main>
                 <section id="posts">
-                    <div class="wrapper">
-                        <a href="enconstruccion.html">
-                            <div class="post">
-                                <img src="../imagenes/cafe.png" alt="Img café">
-                                <div class="texto">
-                                    <h3>Los orígenes del café</h3>
-                                    <p>CulinarIA</p>
-                                    <p>9/2/2025</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
 
-                    <div class="wrapper">
-                        <a href="enconstruccion.html">
-                            <div class="post">
-                                <img src="../imagenes/esferificacion.png" alt="Img esferificación">
-                                <div class="texto">
-                                    <h3>La técnica de la esferificación</h3>
-                                    <p>CulinarIA</p>
-                                    <p>9/2/2025</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="wrapper">
-                        <a href="enconstruccion.html">
-                            <div class="post">
-                                <img src="../imagenes/verduras.png" alt="Img verduras">
-                                <div class="texto">
-                                    <h3>Beneficios de una alimentación saludable</h3>
-                                    <p>CulinarIA</p>
-                                    <p>9/2/2025</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="wrapper">
-                        <a href="enconstruccion.html">
-                            <div class="post">
-                                <img src="../imagenes/filloas.png" alt="Img filloas">
-                                <div class="texto">
-                                    <h3>Nada mejor que unas filloas caseras por carnaval</h3>
-                                    <p>CulinarIA</p>
-                                    <p>9/2/2025</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
                 </section>
             </main>
         </div>
@@ -146,6 +99,7 @@
         </footer>
 
         <script src="../js/menutoggle.js"></script>
+        <script src="../js/blog.js"></script>
     </body>
 
 </html>

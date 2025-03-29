@@ -1,0 +1,114 @@
+[
+  {
+    "titulo": "Los mitos del microondas",
+    "autor": "CulinarIA",
+    "fecha": "2024-01-15",
+    "tematica": "mitos",
+    "imagen": "../imagenes/microondas.png"
+  },
+  {
+    "titulo": "Reacciones de Maillard en la cocina",
+    "autor": "CulinarIA",
+    "fecha": "2024-02-10",
+    "tematica": "ciencia",
+    "imagen": "../imagenes/maillard.png"
+  },
+  {
+    "titulo": "Cómo se usaban las especias en la Edad Media",
+    "autor": "CulinarIA",
+    "fecha": "2024-03-12",
+    "tematica": "historia",
+    "imagen": "../imagenes/especias.png"
+  },
+  {
+    "titulo": "Técnicas básicas de corte profesional",
+    "autor": "CulinarIA",
+    "fecha": "2024-04-03",
+    "tematica": "tecnicas",
+    "imagen": "../imagenes/cortes.png"
+  },
+  {
+    "titulo": "La verdad sobre si el pan engorda",
+    "autor": "CulinarIA",
+    "fecha": "2024-05-19",
+    "tematica": "mitos",
+    "imagen": "../imagenes/pan.png"
+  },
+  {
+    "titulo": "Fermentación: ciencia en tus panes",
+    "autor": "CulinarIA",
+    "fecha": "2024-06-07",
+    "tematica": "ciencia",
+    "imagen": "../imagenes/fermentacion.png"
+  },
+  {
+    "titulo": "Alimentos en el antiguo Egipto",
+    "autor": "CulinarIA",
+    "fecha": "2024-07-22",
+    "tematica": "historia",
+    "imagen": "../imagenes/egipto.png"
+  },
+  {
+    "titulo": "Cómo flambear sin morir en el intento",
+    "autor": "CulinarIA",
+    "fecha": "2024-08-11",
+    "tematica": "tecnicas",
+    "imagen": "../imagenes/flambeado.png"
+  },
+  {
+    "titulo": "Mitos sobre el chocolate",
+    "autor": "CulinarIA",
+    "fecha": "2024-09-05",
+    "tematica": "mitos",
+    "imagen": "../imagenes/chocolate.png"
+  },
+  {
+    "titulo": "Cocinar al vacío: principios científicos",
+    "autor": "CulinarIA",
+    "fecha": "2024-10-14",
+    "tematica": "ciencia",
+    "imagen": "../imagenes/sousvide.png"
+  },
+  {
+    "titulo": "El origen del aceite de oliva",
+    "autor": "CulinarIA",
+    "fecha": "2024-11-30",
+    "tematica": "historia",
+    "imagen": "../imagenes/aceiteoliva.png"
+  },
+  {
+    "titulo": "Espumas y aires: técnicas de vanguardia",
+    "autor": "CulinarIA",
+    "fecha": "2024-12-18",
+    "tematica": "tecnicas",
+    "imagen": "../imagenes/espumas.png"
+  },
+  {
+    "titulo": "Mitos sobre los huevos y el colesterol",
+    "autor": "CulinarIA",
+    "fecha": "2025-01-09",
+    "tematica": "mitos",
+    "imagen": "../imagenes/huevos.png"
+  },
+  {
+    "titulo": "Cristalización del azúcar: ciencia dulce",
+    "autor": "CulinarIA",
+    "fecha": "2025-02-13",
+    "tematica": "ciencia",
+    "imagen": "../imagenes/cristalizacion.png"
+  },
+  {
+    "titulo": "El trigo en las antiguas civilizaciones",
+    "autor": "CulinarIA",
+    "fecha": "2025-03-05",
+    "tematica": "historia",
+    "imagen": "../imagenes/trigo.png"
+  },
+  {
+    "titulo": "Técnicas de glaseado de repostería",
+    "autor": "CulinarIA",
+    "fecha": "2025-03-20",
+    "tematica": "tecnicas",
+    "imagen": "../imagenes/glaseado.png"
+  }
+]
