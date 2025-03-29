@@ -192,6 +192,44 @@ label[for="imagenPost"] img {
     cursor: pointer;
 }
 
+.like-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.post figcaption {
+    font-size: 16px;
+    text-align: left;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post .like-btn {
+    margin-top: 0;
+    padding: 8px;
+}
+
+.post .like-btn img.estrella {
+    width: 28px;
+    height: 28px;
+}
+
+.like-btn img.estrella {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.2s ease;
+}
+
+.like-btn:hover img.estrella {
+    transform: scale(1.1);
+}
+
+
 
 @media (max-width: 900px) {
     #container {
