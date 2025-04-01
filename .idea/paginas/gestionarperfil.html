@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
     <head>
         <title>Gestionar Perfil - Mi Cuenta</title>
@@ -8,17 +7,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Blog de CulinarIA, donde encontrarás artículos sobre gastronomía, recetas, técnicas culinarias y mucho más.">
         <meta name="keywords" content="culinaria, blog, gastronomía, recetas, cocina, alimentos, técnicas culinarias">
-        <meta name = "robots" content = "noindex, nofollow">
+        <meta name="robots" content="noindex, nofollow">
         <meta name="author" content="Irene Leis Montes, Gabriel Novo Vila">
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         <link rel="stylesheet" href="../css/estilos.css">
+
+        <!-- Íconos de Bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     </head>
 
     <body>
         <header>
-            <div class="contenedor-img">
+            <div class="contenedor-img d-flex justify-content-between align-items-center px-3 py-2">
                 <div id="logoCulinarIA">
                     <a href="../index.html">
                         <figure>
@@ -48,53 +50,55 @@
             </nav>
         </header>
 
-        <main class="container-fluid bg-white p-0" style="max-width: 1200px;">
-            <div class="row">
-                <!-- Columna izquierda: Selector de opciones -->
-                <div class="col-12 col-md-4 p-4">
-                    <h2 class="mb-4">Gestión de perfil</h2>
+        <main class="flex-grow-1 d-flex flex-column">
+            <div class="contenedor-boost">
+                <div class="row">
+                    <!-- Columna izquierda: Selector de opciones -->
+                    <div class="col-12 col-md-4 mb-4">
+                        <h2 class="mb-4">Gestión de perfil</h2>
 
-                    <!-- Selector con DataList -->
-                    <div class="input-group border rounded">
-                        <span class="input-group-text bg-white border-0"><i class="bi bi-search"></i></span>
-                        <input list="perfilOpciones" id="perfilInput" class="form-control border-0" placeholder="Selecciona una opción...">
-                        <datalist id="perfilOpciones">
-                            <option value="Avatar"></option>
-                            <option value="Nombre"></option>
-                            <option value="Descripción"></option>
-                            <option value="Eliminar cuenta"></option>
-                        </datalist>
-                        <button class="btn btn-light border-0" onclick="document.getElementById('perfilInput').value = ''">
-                            <i class="bi bi-x-circle"></i>
-                        </button>
+                        <!-- Selector con DataList -->
+                        <div class="input-group border rounded">
+                                <span class="input-group-text bg-white border-0">
+                                    <i class="bi bi-search"></i>
+                                </span>
+                            <input list="perfilOpciones" id="perfilInput" class="form-control border-0" placeholder="Selecciona una opción...">
+                            <datalist id="perfilOpciones">
+                                <option value="Avatar">
+                                <option value="Nombre">
+                                <option value="Descripción">
+                                <option value="Eliminar cuenta">
+                            </datalist>
+                            <button class="btn btn-light border-0" onclick="document.getElementById('perfilInput').value = ''">
+                                <i class="bi bi-x-circle"></i>
+                            </button>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Columna derecha: Cambiar Avatar -->
-                <div class="col-12 col-md-8 p-4">
-                    <div class="p-4 rounded border bg-light">
-                        <h3>Cambiar avatar</h3>
-                        <div class="d-flex flex-column align-items-center">
-                            <img src="imagenes/default-avatar.png" alt="Foto de perfil" class="img-fluid rounded-circle mb-3" width="100">
-                            <label class="btn btn-basic">
-                                <i class="bi bi-image"></i> Subir imagen
-                                <input type="file" id="subir-foto" accept="image/*" hidden>
-                            </label>
+                    <!-- Columna derecha: Cambiar Avatar -->
+                    <div class="col-12 col-md-8">
+                        <div class="rounded border bg-light">
+                            <h3 class="mb-3">Cambiar avatar</h3>
+                            <div class="d-flex flex-column align-items-center">
+                                <img src="imagenes/default-avatar.png" alt="Foto de perfil" class="img-fluid rounded-circle mb-3" width="100">
+                                <label class="btn btn-outline-secondary">
+                                    <i class="bi bi-image"></i> Subir imagen
+                                    <input type="file" id="subir-foto" accept="image/*" hidden>
+                                </label>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Botón de Cerrar Sesión -->
-            <div class="text-end mt-3">
-                <a href="iniciarsesion.html" class="btn btn-light">Cerrar Sesión</a>
+                <!-- Botón de Cerrar Sesión -->
+                <div class="text-end mt-4">
+                    <a href="iniciarsesion.html" class="btn btn-light">Cerrar Sesión</a>
+                </div>
             </div>
         </main>
 
         <footer>
             <p>&copy; 2025 CulinarIA - Todos los derechos reservados</p>
         </footer>
-
-
     </body>
 </html>

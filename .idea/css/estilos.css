@@ -111,6 +111,17 @@ main {
     min-height: 60vh;
 }
 
+.contenedor-boost {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 100%;
+    flex-grow: 1;
+    padding: 40px;
+    background-color: white;
+}
+
+
 footer {
     width: 100vw;
     text-align: center;
